@@ -19,6 +19,45 @@ require("lazy").setup({
     -- add LazyVim and import its plugins
     { "LazyVim/LazyVim", import = "lazyvim.plugins" },
     -- import/override with your plugins
+
+    -- CODING
+    { import = "lazyvim.plugins.extras.coding.mini-surround" }, -- TODO: learn keybinds
+    { import = "lazyvim.plugins.extras.coding.neogen" }, -- TODO: investigate neogen
+    { import = "lazyvim.plugins.extras.coding.yanky" }, -- TODO: learn keybinds
+
+    -- EDITOR
+    { import = "lazyvim.plugins.extras.editor.fzf" }, -- TODO: learn keybinds
+    { import = "lazyvim.plugins.extras.editor.illuminate" },
+    -- { import = "lazyvim.plugins.extras.editor.navic" }, -- INFO: fommented in favor of treesitter-context
+    { import = "lazyvim.plugins.extras.editor.outline" }, -- TODO: investigate plugin, sht: <leader>cs
+    { import = "lazyvim.plugins.extras.editor.refactoring" }, -- TODO: investigate plugin
+    -- { import = "lazyvim.plugins.extras.editor.leap" }, TODO: investigate this plugin
+
+    -- LANGUAGES
+    { import = "lazyvim.plugins.extras.lang.docker" },
+    { import = "lazyvim.plugins.extras.lang.git" },
+    { import = "lazyvim.plugins.extras.lang.go" },
+    { import = "lazyvim.plugins.extras.lang.json" },
+    { import = "lazyvim.plugins.extras.lang.markdown" },
+    { import = "lazyvim.plugins.extras.lang.ruby" },
+    { import = "lazyvim.plugins.extras.lang.tailwind" },
+    { import = "lazyvim.plugins.extras.lang.typescript" },
+    { import = "lazyvim.plugins.extras.lang.yaml" },
+
+    -- { import = "lazyvim.plugins.extras.lsp.neoconf" }, -- TODO: investigate plugin
+
+    -- OTHER
+    { import = "lazyvim.plugins.extras.dap.core" }, -- TODO: investigate functionality for main languages
+    { import = "lazyvim.plugins.extras.test.core" },
+
+    -- UI
+    { import = "lazyvim.plugins.extras.ui.mini-animate" },
+    { import = "lazyvim.plugins.extras.ui.mini-indentscope" },
+    { import = "lazyvim.plugins.extras.ui.treesitter-context" },
+    { import = "lazyvim.plugins.extras.util.mini-hipatterns" },
+    { import = "lazyvim.plugins.extras.util.project" }, -- TODO: check functionality
+
+    -- IMPORT
     { import = "plugins" },
   },
   defaults = {
@@ -30,7 +69,7 @@ require("lazy").setup({
     version = false, -- always use the latest git commit
     -- version = "*", -- try installing the latest stable version for plugins that support semver
   },
-  install = { colorscheme = { "tokyonight", "habamax" } },
+  install = { colorscheme = { "tokyonight", "habamax", "kanagawa" } },
   checker = {
     enabled = true, -- check for plugin updates periodically
     notify = false, -- notify on update
