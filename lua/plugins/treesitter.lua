@@ -35,6 +35,7 @@ return {
         "ruby",
         "scss",
         "sql",
+        "clojure",
         "terraform",
         "toml",
         "tsx",
